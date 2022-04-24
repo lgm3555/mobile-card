@@ -1,0 +1,43 @@
+.StoryLink {
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    padding-top: 10px;
+    display: inline-block;
+    width: 25%;
+    
+    LINK {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        text-decoration: none;
+        font-size: 1.05em;
+    }
+
+    .imageBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 30px;
+        border-radius: 50%;
+        background-image: linear-gradient(150deg, #c2255c, #ff922b, #fab005);
+        background-origin: border-box;
+        background-clip: content-box;
+        width: 70px;
+
+    }
+
+    .profile {
+        width: 60px;
+        height: 60px;
+        margin: 3px;
+        border-radius: 50%;
+    }
+
+    .storyName {
+        text-align: center;
+        font-size: 0.9em;
+        color: white;
+    }
+}
