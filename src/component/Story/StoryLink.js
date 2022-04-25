@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Profile from './Profile';
 import './StoryLink.scss';
 
 const StoryLink = ({profile}) => {
@@ -7,7 +8,7 @@ const StoryLink = ({profile}) => {
         <div className="StoryLink">
             <div className="imageBox">
                 <Link to={profile.id}>
-                    <img className="profile" src={profile.url} alt="home" />
+                    <Profile profileUrl={profile.url} />
                 </Link>
             </div>
             <div className="storyName">{profile.text}</div>

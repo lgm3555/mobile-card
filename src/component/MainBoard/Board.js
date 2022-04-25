@@ -1,29 +1,35 @@
-import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from "swiper";
-import "swiper/swiper.scss";
-import "swiper/components/pagination/pagination.scss";
-
-
-SwiperCore.use([Navigation, Pagination]);
+import React, {useState} from "react";
+import { Routes, Route, useParams } from "react-router-dom";
+import Profile from "../Story/Profile";
+import Home from "./Home";
+import Man from "./Man";
+import Girl from "./Girl";
+import Location from "./Location";
+import ProfileDataList from "../../globals/ProfileDataList";
 
 const Board = () => {
-    return (
-        <div>
-        <Swiper
-          className="banner"
-          spaceBetween={50}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-        >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-        </Swiper>
+  const {profileName} = useParams();
+  const [profile, setProfile] = useState();
+console.log(profileName);
+  ProfileDataList.map(profile => {
+    if (profile.url == profileName) {
+      const profile = <Profile profileUrl={profile.url} />
+    }
+  });
+
+  return (
+    <div className="Board">
+      <div>
+        {profile}
       </div>
-    )
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/man" element={<Man />} />
+        <Route path="/girl" element={<Girl />} />
+        <Route path="/location" element={<Location />} />
+      </Routes>
+    </div>
+  )
 };
 
 export default Board;

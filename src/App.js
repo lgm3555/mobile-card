@@ -1,6 +1,6 @@
 import Top from './component/Top/Top';
 import StoryCircle from './component/Story/StoryCircle';
-import MainBoard from './component/MainBoard/Board';
+import Board from './component/MainBoard/Board';
 import './App.css'
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
     <div>
       <Top />
       <StoryCircle />
-      <MainBoard />
+      <Board />
     </div>
   )
 }

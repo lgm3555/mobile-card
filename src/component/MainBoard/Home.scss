@@ -1,0 +1,11 @@
+.Home {
+    border: solid 15px black;
+    background-color: black;
+    text-align: center;
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
