@@ -1,21 +1,21 @@
 const ProfileDataList = [
     {
-        text: 'Home',
+        text: '상수❤나라',
         id: '/',
         url: './image/profileHomeImage.jpeg'
     },
     {
-        text: 'Man',
+        text: '상수',
         id: '/man',
         url: './image/profileManImage.jpeg'
     },
     {
-        text: 'Girl',
+        text: '나라',
         id: '/girl',
         url: './image/profileGirlImage.jpeg'
     },
     {
-        text: 'Location',
+        text: '위치',
         id: '/location',
         url: './image/locationImage.png'
     }

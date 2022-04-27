@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import StoryLink from './StoryLink';
 import './StoryCircle';
 import ProfileDataList from "../../globals/ProfileDataList";

@@ -2,10 +2,13 @@
     border: solid 15px black;
     background-color: black;
     text-align: center;
-    
+    height: 70%;
+    line-height:500px;
+
     img {
-        max-width: 100%;
-        height: auto;
+        width: 70%;
+        height: 50%;
         object-fit: cover;
+        vertical-align:middle;
     }
 }

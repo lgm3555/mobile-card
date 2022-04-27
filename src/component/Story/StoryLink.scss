@@ -3,7 +3,7 @@
     justify-content: space-around;
     background-color: black;
     padding-top: 10px;
-    display: inline-block;
+    float: left;
     width: 25%;
     
     LINK {
@@ -25,12 +25,13 @@
         background-origin: border-box;
         background-clip: content-box;
         width: 70px;
-
     }
 
     .storyName {
         text-align: center;
         font-size: 0.9em;
         color: white;
+        height: 20px;
+        width: 100%;
     }
 }

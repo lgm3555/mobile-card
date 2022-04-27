@@ -1,3 +1,23 @@
 .Board {
-    
+    clear: both;
+    background-color: black;
+    height: 650px;
+
+    .BoardProfileBox {
+        width: 100%;
+    }
+
+    .BoardProfile {
+        margin-top: 20px;
+        margin-left: 30px;
+        border-radius: 50%;
+        width: 50px;
+    }
+
+    .BoardStoryName {
+        font-size: 1.3em;
+        color: white;
+        display: inline-block;
+        margin-left: 30px;
+    }
 }

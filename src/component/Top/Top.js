@@ -6,7 +6,7 @@ const Top = () => {
     return (
         <div className="Top">
             <img src="./image/title.png" alt="title img" />
-            <span>임광민 ❤ 임광민</span>
+            <span>김상수 ❤ 신나라</span>
         </div>
     )
 

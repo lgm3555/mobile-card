@@ -1,0 +1,18 @@
+.Man {
+    border: solid 15px black;
+    background-color: black;
+
+    text-align: center;
+
+    img {
+        border-radius: 50%;
+        vertical-align:middle;
+        width: 80%;
+    }
+
+    span {
+        font-size: 30px;
+        color: white;
+        text-align: left;
+    }
+}

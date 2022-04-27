@@ -5,11 +5,11 @@ import './App.css'
 
 const App = () => {
   return (
-    <div>
+    <>
       <Top />
       <StoryCircle />
       <Board />
-    </div>
+    </>
   )
 }
 

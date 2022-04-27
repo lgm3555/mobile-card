@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'LeeSeoyun';
-  src: url("/src/globals/font/LeeSeoyun.ttf") format("truetype");
+  src: url("globals/font/LeeSeoyun.ttf") format("truetype");
 }
 
 body {

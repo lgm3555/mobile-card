@@ -1,26 +1,29 @@
-import React, {useState} from "react";
-import { Routes, Route, useParams } from "react-router-dom";
-import Profile from "../Story/Profile";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Man from "./Man";
 import Girl from "./Girl";
 import Location from "./Location";
+import "./Board.scss";
 import ProfileDataList from "../../globals/ProfileDataList";
 
 const Board = () => {
-  const {profileName} = useParams();
-  const [profile, setProfile] = useState();
-console.log(profileName);
-  ProfileDataList.map(profile => {
-    if (profile.url == profileName) {
-      const profile = <Profile profileUrl={profile.url} />
+  const pathName = window.location.pathname;
+  const profileBox = ProfileDataList.map(profile => {
+    if (profile.id == pathName) {
+      return (
+        <>
+          <img className="BoardProfile" src={profile.url} alt="profile" />
+          <div className="BoardStoryName">{profile.text}</div>
+        </>
+      );
     }
   });
 
   return (
     <div className="Board">
-      <div>
-        {profile}
+      <div className="BoardProfileBox">
+        {profileBox}
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
