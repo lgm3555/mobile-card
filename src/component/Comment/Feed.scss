@@ -1,0 +1,23 @@
+.CommentBox {
+    clear: both;
+    padding-top: 30px;
+
+    input {
+        border-radius: 8%;
+        background-color: #FDF4EA	;
+    }
+    .commentIdInput {
+        width: 30%;
+    }
+    .commentPassInput {
+        margin-left: 15px;
+    }
+    .commentTextInput {
+        width: 100%;
+        height: 35px;
+    }
+    div {
+        text-align: center;
+        padding: 10px;
+    }
+}

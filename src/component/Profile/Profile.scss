@@ -1,6 +1,37 @@
 .Profile {
-    width: 60px;
-    height: 60px;
-    margin: 3px;
-    border-radius: 50%;
+    height: 95px;
+
+    .BackImg {
+        position: absolute;
+        width: 10px;
+
+        .BackImgDiv {
+            position: relative;
+            top: 20px;
+            left: 25px;
+        }
+
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+    }
+
+    .MainImg {
+
+        position: absolute;
+
+        .MainImgDiv {
+            position: relative;
+            top: 24px;
+            left: 31px;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+    }
 }

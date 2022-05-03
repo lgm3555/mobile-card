@@ -1,0 +1,25 @@
+.Cards {
+    box-shadow: 2px 2px 2px 2px gray;
+    max-width: 230px;
+    float: left;
+    margin: 10px;
+
+    h4 {
+        float: left;
+        width: 150px;
+        margin: 8px;
+    }
+
+    span {
+        font-size: 5px;
+        width: 60px;
+    }   
+}
+
+.Card {
+    color: black;
+    padding: 1rem;
+    width: 200px;
+    height: 4rem;
+    font-size: 13px;
+}

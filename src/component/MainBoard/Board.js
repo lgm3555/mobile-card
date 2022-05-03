@@ -13,8 +13,8 @@ const Board = () => {
     if (profile.id == pathName) {
       return (
         <>
-          <img className="BoardProfile" src={profile.url} alt="profile" />
-          <div className="BoardStoryName">{profile.text}</div>
+          <img src={profile.url} alt="profile" />
+          <span>{profile.text}</span>
         </>
       );
     }

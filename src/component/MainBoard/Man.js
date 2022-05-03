@@ -1,19 +1,32 @@
-import React from "react";
-import './Man.scss';
+import React, { useState } from "react";
+import AccountBox from "component/Account/AccountBox";
+import './BoardProfile.scss';
 
 const Man = () => {
+    
+    const [visible, setVisible] = useState(false);
+    const accountName = "예금자명 : 김상수";
+    const accountNumber = "신한은행 : 000-000000-0000";
+
     return (
-        <div className="Man">
-            <img src="./image/marryImage6.jpg" alt="main6" />
+        <div className="BoardPro">
+            <img src="./image/circleManImage.jpg" alt="main6" />
             <br />
             <span>
                 안녕하세요. <br />
-                드디어 신랑이 되는 김상수입니다. <br />
-                저희 둘이 이제는 결실을 맺으려 합니다. <br />
-                그 순간속에 여러분을 초대합니다. <br />
-                부디 저희의 기쁜 날에 함께해주시는 <br />
-                모두에게도 기쁜 날이 될 수 있길 바랍니다. <br />
+                드디어 신랑이 되는 김상수 입니다. <br />
+                믿음으로 함께하고 사랑으로 하나되는 <br />
+                저희 약속의 자리에 소중한 분들을 모시고자 합니다. <br />
+                서로를 아끼고 감사하며 아름답게 살아가겠습니다. <br />
             </span>
+            <br />
+            <button onClick={() => {
+                setVisible(!visible);
+            }}>
+                신랑측 계좌번호 확인하기
+            </button>
+            <br />
+            {visible && <AccountBox name={accountName} number={accountNumber} />}
         </div>
     );
 };

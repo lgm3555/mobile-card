@@ -1,14 +1,12 @@
 .Home {
-    border: solid 15px black;
-    background-color: black;
     text-align: center;
-    height: 70%;
-    line-height:500px;
+    height: 65%;
+    line-height:300px;
 
     img {
-        width: 70%;
-        height: 50%;
-        object-fit: cover;
+        width: auto;
+        height: auto;
+        max-width: 57%;
         vertical-align:middle;
     }
 }
