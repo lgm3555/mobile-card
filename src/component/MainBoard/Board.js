@@ -12,10 +12,10 @@ const Board = () => {
   const profileBox = ProfileDataList.map(profile => {
     if (profile.id == pathName) {
       return (
-        <>
+        <div key={profile.id}>
           <img src={profile.url} alt="profile" />
           <span>{profile.text}</span>
-        </>
+        </div>
       );
     }
   });
