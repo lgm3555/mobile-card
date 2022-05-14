@@ -16,8 +16,13 @@
         width: 100%;
         height: 35px;
     }
-    div {
+    .submitBtn {
         text-align: center;
         padding: 10px;
+
+        button {
+            background-color: #FDF4EA	;
+            border : 0;
+        }
     }
 }

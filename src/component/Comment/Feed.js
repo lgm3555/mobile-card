@@ -63,9 +63,11 @@ const Feed = (props) => {
                         placeholder="댓글달기..."
                         onChange={handleChange}
                     />
-                    <button type="submit">
-                        작성하기
-                    </button>
+                    <div className="submitBtn">
+                        <button type="submit">
+                            작성하기
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>
