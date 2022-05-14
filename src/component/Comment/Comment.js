@@ -1,18 +1,24 @@
 import React from "react";
 import './Comment.scss';
+import axios from 'axios';
 
 const Comment = (props) => {
-    const {comment} = props;
 
-    const updateClick = (seq) => {
-        console.log(seq);
+    const propDataClick = async (seq, mode) => {
+        try {
+            const getApiResult = await axios.get('/board/' + seq);
+
+            props.setInputs({
+                idValue: getApiResult.data.id,
+                textValue: getApiResult.data.content
+            });
+            props.setSeq(seq);
+            props.setMode(mode);
+        } catch (error) {
+        }
     }
 
-    const deleteClick = (seq) => {
-        console.log(seq);
-    }
-
-    const box = comment.map(comment => {
+    const box = props.comment.map(comment => {
         return (
             <div className="Cards" key={comment.seq}>
                 <h4>{comment.id}</h4>
@@ -22,12 +28,12 @@ const Comment = (props) => {
                 </div>
                 <div className="CardBtn">
                     <span onClick={() => {
-                        updateClick(comment.seq);
+                        propDataClick(comment.seq, "edit");
                     }} >
                         수정
                     </span>
                     <span onClick={() => {
-                        deleteClick(comment.seq);
+                        propDataClick(comment.seq, "delete");
                     }} >
                         삭제
                     </span>

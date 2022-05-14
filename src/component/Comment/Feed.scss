@@ -1,6 +1,7 @@
 .CommentBox {
     clear: both;
     padding-top: 30px;
+    padding: 10px;
 
     input {
         border-radius: 8%;
@@ -18,11 +19,12 @@
     }
     .submitBtn {
         text-align: center;
-        padding: 10px;
+        padding-top: 10px;
 
         button {
-            background-color: #FDF4EA	;
-            border : 0;
+            border: 0;
+            color: black;
+            background-color: #FDF4EA;
         }
     }
 }
